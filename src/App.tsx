@@ -1,7 +1,9 @@
 function App() {
   return (
     <>
-      <div>Hello world</div>
+      <div className="">
+        <span className="bg-red-500">Hello world</span>
+      </div>
     </>
   );
 }
