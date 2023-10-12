@@ -5,12 +5,12 @@ interface MenuItemsProps {
 }
 
 const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
-  const radius = 240; // radius of the curve
-  const angle = 90; // angle of the curve in degrees
-  const startAngle = -45; // starting angle of the curve in degrees
+  const radius = 240;
+  const angle = 90;
+  const startAngle = -45;
 
-  const itemCount = 9; // number of menu items
-  const itemAngle = angle / (itemCount - 2); // angle between each item
+  const itemCount = 9;
+  const itemAngle = angle / (itemCount - 2);
   const itemPositions = Array.from({ length: itemCount }, (_, i) => {
     const itemAngleDeg = startAngle + i * itemAngle;
     const itemAngleRad = (itemAngleDeg * Math.PI) / 180;
@@ -20,7 +20,7 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
   });
 
   return (
-    <div className="absolute top-0 right-0 h-full">
+    <div className="absolute top-0 right-0 lg:right-[35vw] h-full">
       <div className="justify-end pt-3">
         {itemPositions.map((pos, i) => (
           <div
