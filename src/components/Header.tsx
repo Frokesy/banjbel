@@ -8,7 +8,7 @@ const Header = () => {
     <div className="px-4 py-3 flex items-center bg-[#f6f6f6] text-[#456db4] justify-between">
       <div className="flex items-center space-x-2">
         <img
-          src="/src/assets/sample.png"
+          src="/assets/sample.png"
           alt="logo"
           className="w-[4rem] rounded-full"
         />

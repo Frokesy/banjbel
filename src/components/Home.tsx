@@ -6,7 +6,7 @@ import PageTransition from "./PageTransition";
 const Home = () => {
   return (
     <PageTransition>
-      <img src="/src/assets/dummy_img.jpg" alt="dummy_img" />
+      <img src="/assets/dummy_img.jpg" alt="dummy_img" />
       <div className="">
         <About />
         <Registration />
