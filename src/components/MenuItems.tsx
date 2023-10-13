@@ -29,6 +29,7 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
       transition: {
         duration: 0.5,
         ease: "easeInOut",
+        staggerChildren: 0.2,
       },
     },
     hover: {
@@ -39,6 +40,7 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
       },
     },
   };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -51,7 +53,7 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
         variants={{
           visible: {
             transition: {
-              staggerChildren: 0.1,
+              staggerChildren: 0.2,
             },
           },
         }}

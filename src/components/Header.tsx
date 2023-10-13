@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
 import MenuItems from "./MenuItems";
+import { Twirl as Hamburger } from 'hamburger-react'
 
 const Header = () => {
   const [showItems, setShowItems] = useState(false);
@@ -12,12 +12,12 @@ const Header = () => {
           alt="logo"
           className="w-[4rem] rounded-full"
         />
-        <span className="text-[18px] uppercase font-bold">
+        <span className="text-[16px] uppercase font-bold">
           banjbel driving school
         </span>
       </div>
       <div className="cursor-pointer">
-        <FaBars size={24} onClick={() => setShowItems(!showItems)} />
+        <Hamburger size={24} toggled={showItems} toggle={setShowItems} />
       </div>
 
       {showItems && <MenuItems setShowItems={setShowItems} />}
