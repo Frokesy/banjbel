@@ -1,5 +1,6 @@
 import { FC } from "react";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 interface MenuItemsProps {
   setShowItems: (showItems: boolean) => void;
@@ -20,11 +21,46 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
     return { x, y };
   });
 
+  const itemVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeInOut",
+      },
+    },
+    hover: {
+      scale: 1.1,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
-    <div className="absolute top-0 right-0 lg:right-[35vw] h-full">
-      <div className="justify-end pt-3">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+      className="absolute top-0 right-0 lg:right-[35vw] h-full"
+    >
+      <motion.div
+        variants={{
+          visible: {
+            transition: {
+              staggerChildren: 0.1,
+            },
+          },
+        }}
+        initial="hidden"
+        animate="visible"
+        className="justify-end pt-3"
+      >
         {itemPositions.map((pos, i) => (
-          <div
+          <motion.div
             key={i}
             className="border border-[#456db4] bg-[#f6f6f6] flex justify-center py-0.5 px-4 rounded-full uppercase text-[13px] font-bold"
             style={{
@@ -32,6 +68,8 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
               left: `calc(50% - ${pos.x}px)`,
               top: `calc(30% + ${pos.y}px)`,
             }}
+            variants={itemVariants}
+            whileHover="hover"
             onClick={() => setShowItems(false)}
           >
             {i === 0 ? (
@@ -53,10 +91,10 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
             ) : (
               <NavLink to="/contact">Contact Us</NavLink>
             )}
-          </div>
+          </motion.div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

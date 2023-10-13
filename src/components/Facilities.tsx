@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import PageTransition from "./PageTransition";
 
 const Facilities = () => {
   const items = [
@@ -10,32 +11,34 @@ const Facilities = () => {
     "Practical Training: Banjbel provides hands-on experience.",
   ];
   return (
-    <div className="w-[90%] mx-auto py-10">
-      <h2 className="uppercase text-[20px] text-[#456db4] font-bold text-center pb-3">
-        Facilities
-      </h2>
-      <span className="text-[#828282] text-center text-[18px]">
-        Banjbel driving school provides essential services that equip future
-        drivers with the knowledge and skills needed to drive safely and
-        confidently. These services include:
-      </span>
-      <div className="space-y-6 pt-3 pb-4">
-        {items.map((item) => (
-          <div key={item} className="text-[#828282] flex space-x-2">
-            <FaStar />
-            <p>{item}</p>
-          </div>
-        ))}
-      </div>
+    <PageTransition>
+      <div className="w-[90%] mx-auto py-10">
+        <h2 className="uppercase text-[20px] text-[#456db4] font-bold text-center pb-3">
+          Facilities
+        </h2>
+        <span className="text-[#828282] text-center text-[18px]">
+          Banjbel driving school provides essential services that equip future
+          drivers with the knowledge and skills needed to drive safely and
+          confidently. These services include:
+        </span>
+        <div className="space-y-6 pt-3 pb-4">
+          {items.map((item) => (
+            <div key={item} className="text-[#828282] flex space-x-2">
+              <FaStar />
+              <p>{item}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className="flex justify-center">
-        <NavLink to="/gallery">
-          <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
-            Gallery
-          </button>
-        </NavLink>
+        <div className="flex justify-center">
+          <NavLink to="/gallery">
+            <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
+              Gallery
+            </button>
+          </NavLink>
+        </div>
       </div>
-    </div>
+    </PageTransition>
   );
 };
 

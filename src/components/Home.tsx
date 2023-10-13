@@ -1,10 +1,11 @@
 import Card from "./layout/Card";
 import Registration from "./Registration";
 import About from "./About";
+import PageTransition from "./PageTransition";
 
 const Home = () => {
   return (
-    <div>
+    <PageTransition>
       <img src="/src/assets/dummy_img.jpg" alt="dummy_img" />
       <div className="">
         <About />
@@ -34,7 +35,7 @@ const Home = () => {
           />
         </div>
       </div>
-    </div>
+    </PageTransition>
   );
 };
 
