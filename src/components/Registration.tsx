@@ -3,7 +3,7 @@ import InputField from "./layout/InputField";
 
 const Registration = () => {
   return (
-    <div className="mb-[10vh]">
+    <div className="mb-[10vh] w-[90%] mx-auto">
         <Title content="Quick Registration" />
         <InputField placeholder="name" type="text" />
         <InputField placeholder="address" type="text" />

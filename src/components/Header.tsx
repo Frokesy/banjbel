@@ -16,11 +16,11 @@ const Header = () => {
           banjbel driving school
         </span>
       </div>
-      <FaBars size={24} onClick={() => setShowItems(!showItems)} />
+      <div className="cursor-pointer">
+        <FaBars size={24} onClick={() => setShowItems(!showItems)} />
+      </div>
 
-      {showItems && (
-        <MenuItems setShowItems={setShowItems} />
-      )}
+      {showItems && <MenuItems setShowItems={setShowItems} />}
     </div>
   );
 };

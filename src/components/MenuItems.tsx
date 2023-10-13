@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { NavLink } from "react-router-dom";
 
 interface MenuItemsProps {
   setShowItems: (showItems: boolean) => void;
@@ -33,23 +34,25 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
             }}
             onClick={() => setShowItems(false)}
           >
-            {i === 0
-              ? "home"
-              : i === 1
-              ? "our service"
-              : i === 2
-              ? "pricing"
-              : i === 3
-              ? "gallery"
-              : i === 4 
-              ? "facilities"
-              : i === 5
-              ? "about us"
-              : i === 6
-              ? "vision"
-              : i === 7
-              ? "mission"
-              : "contact us"}
+            {i === 0 ? (
+              <NavLink to="/">home</NavLink>
+            ) : i === 1 ? (
+              <NavLink to="/services">services</NavLink>
+            ) : i === 2 ? (
+              <NavLink to="/pricing">pricing</NavLink>
+            ) : i === 3 ? (
+              <NavLink to="/gallery">gallery</NavLink>
+            ) : i === 4 ? (
+              <NavLink to="/facilities">facilities</NavLink>
+            ) : i === 5 ? (
+              <NavLink to="/registration">register</NavLink>
+            ) : i === 6 ? (
+              <NavLink to="vision">Vision & Mission</NavLink>
+            ) : i === 7 ? (
+              <NavLink to="/about">about us</NavLink>
+            ) : (
+              <NavLink to="/contact">Contact Us</NavLink>
+            )}
           </div>
         ))}
       </div>
