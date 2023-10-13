@@ -5,6 +5,7 @@ import {
   FaPhone,
   FaTwitter,
 } from "react-icons/fa";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -25,16 +26,22 @@ const Footer = () => {
 
         <div className="flex flex-col space-y-3">
           <h2 className="text-[#404040] text-[24px] mt-3 font-bold">Company</h2>
-          <p className="text-[#404040] font-semibold text-[18px]">About Us</p>
-          <p className="text-[#404040] font-semibold text-[18px]">Contacts</p>
+          <NavLink to="/about">
+            <p className="text-[#404040] font-semibold text-[18px]">About Us</p>
+          </NavLink>
+          <NavLink to="/contact">
+            <p className="text-[#404040] font-semibold text-[18px]">Contacts</p>
+          </NavLink>
           <p className="text-[#404040] font-semibold text-[18px]">Reviews</p>
         </div>
 
         <div className="flex flex-col space-y-2 mt-6 mb-10">
           <h2 className="text-[#404040] text-[24px] font-bold">Support</h2>
-          <p className="text-[#404040] font-semibold text-[18px]">
-            Terms and Conditions
-          </p>
+          <NavLink to="/terms">
+            <p className="text-[#404040] font-semibold text-[18px]">
+              Terms and Conditions
+            </p>
+          </NavLink>
           <p className="text-[#404040] font-semibold text-[18px]">
             Refund Policy
           </p>
@@ -42,7 +49,7 @@ const Footer = () => {
 
         <div className="border-b-2 border-[#404040]"></div>
         <p className="text-center text-[#404040] py-6 font-semibold text-[18px]">
-            powered by -Goatclouds
+          powered by -Goatclouds
         </p>
       </div>
     </div>

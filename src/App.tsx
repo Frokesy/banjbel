@@ -10,12 +10,13 @@ import Vision from "./components/Vision";
 import Facilities from "./components/Facilities";
 import Contact from "./components/Contact";
 import { AnimatePresence } from "framer-motion";
+import Terms from "./components/Terms";
 
 function App() {
   const location = useLocation();
   return (
     <Container>
-      <AnimatePresence mode="wait">
+      <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
           <Route path="/pricing" element={<Pricing />} />
@@ -26,6 +27,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/terms" element={<Terms />} />
         </Routes>
       </AnimatePresence>
     </Container>
