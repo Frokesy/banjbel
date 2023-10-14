@@ -1,54 +1,63 @@
-import {
-  FaEnvelope,
-  FaFacebook,
-  FaGooglePlus,
-  FaPhone,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="bg-[#f6f6f6]">
-      <div className="flex w-[90%] mx-auto justify-between pt-6">
-        <FaPhone size={30} color="#456db4" />
-        <FaEnvelope size={30} color="#404040" />
-        <FaFacebook size={30} color="#456db4" />
-        <FaTwitter size={30} color={"blue"} />
-        <FaGooglePlus size={30} color="red" />
-      </div>
-      <div className="mt-20 w-[90%] mx-auto">
-        <h2 className="text-[#404040] text-[24px] pb-2 font-bold">Address</h2>
-        <span className="text-[#404040] font-semibold text-[18px]">
+      <div className="mt-20 w-[90%] mx-auto pt-10">
+        <h2 className="text-[#404040] text-[20px] pb-2 font-bold">Address</h2>
+        <span className="text-[#404040] font-semibold text-[16px]">
           AA studio building between L.O.A court and Gasland station Ashi
           junction Bashorun-Akobo road Ibadan.
         </span>
 
         <div className="flex flex-col space-y-3">
-          <h2 className="text-[#404040] text-[24px] mt-3 font-bold">Company</h2>
+          <h2 className="text-[#404040] text-[20px] mt-6 font-bold">
+            Contacts
+          </h2>
+          <div className="flex items-center space-x-2">
+            <FaWhatsapp size={20} color="green" />
+            <p className="text-[#404040] font-semibold text-[14px]">
+              091123456789
+            </p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaPhone size={16} color="#456db4" />
+            <p className="text-[#404040] font-semibold text-[14px]">
+              091123456789
+            </p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaEnvelope size={20} color="#404040" />
+            <p className="text-[#404040] font-semibold text-[14px]">
+              johndoe@gmail.com
+            </p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaTwitter size={20} color="#456db4" />
+            <p className="text-[#404040] font-semibold text-[14px]">@banjbel</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col space-y-3">
+          <h2 className="text-[#404040] text-[20px] mt-6 font-bold">Company</h2>
           <NavLink to="/about">
-            <p className="text-[#404040] font-semibold text-[18px]">About Us</p>
+            <p className="text-[#404040] font-semibold text-[16px]">About Us</p>
           </NavLink>
-          <NavLink to="/contact">
-            <p className="text-[#404040] font-semibold text-[18px]">Contacts</p>
-          </NavLink>
-          <p className="text-[#404040] font-semibold text-[18px]">Reviews</p>
+          <p className="text-[#404040] font-semibold text-[16px]">Reviews</p>
         </div>
 
         <div className="flex flex-col space-y-2 mt-6 mb-10">
-          <h2 className="text-[#404040] text-[24px] font-bold">Support</h2>
+          <h2 className="text-[#404040] text-[20px] font-bold">Support</h2>
           <NavLink to="/terms">
-            <p className="text-[#404040] font-semibold text-[18px]">
+            <p className="text-[#404040] font-semibold text-[16px]">
               Terms and Conditions
             </p>
           </NavLink>
-          <p className="text-[#404040] font-semibold text-[18px]">
-            Refund Policy
-          </p>
         </div>
 
         <div className="border-b-2 border-[#404040]"></div>
-        <p className="text-center text-[#404040] py-6 font-semibold text-[18px]">
+        <p className="text-center text-[#404040] py-6 font-semibold text-[16px]">
           powered by -Goatclouds
         </p>
       </div>
