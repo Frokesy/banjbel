@@ -23,7 +23,7 @@ function App() {
   const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
-    const modalTimeout = setTimeout(openModal, 5000);
+    const modalTimeout = setTimeout(openModal, 10000);
     return () => clearTimeout(modalTimeout);
   }, []);
   return (

@@ -34,8 +34,8 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal }) => {
                 <FaTimes size={24} />
               </button>
             </div>
-            <div className="">
-              <img src="/slideshow/10.jpg" alt="baff" />
+            <div className="h-[70%]">
+              <img src="/slideshow/10.jpg" alt="baff" className="h-[100%]" />
             </div>
 
             <div className="flex justify-center">
