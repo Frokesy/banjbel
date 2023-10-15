@@ -4,3 +4,9 @@
 .overflow-auto::-webkit-scrollbar {
     display: none;
 }
+
+#root {
+    background-image: url("/assets/bgImg.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
