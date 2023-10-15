@@ -11,11 +11,24 @@ import Facilities from "./components/Facilities";
 import Contact from "./components/Contact";
 import { AnimatePresence } from "framer-motion";
 import Terms from "./components/Terms";
+import { useEffect, useState } from "react";
+import Popup from "./components/PopUp";
+import Baff from "./components/Baff";
 
 function App() {
   const location = useLocation();
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  useEffect(() => {
+    const modalTimeout = setTimeout(openModal, 5000);
+    return () => clearTimeout(modalTimeout);
+  }, []);
   return (
     <Container>
+      <Popup isOpen={isModalOpen} closeModal={closeModal} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />} />
@@ -28,6 +41,7 @@ function App() {
           <Route path="/vision" element={<Vision />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<Terms />} />
+          <Route path="/baff" element={<Baff />} />
         </Routes>
       </AnimatePresence>
     </Container>
