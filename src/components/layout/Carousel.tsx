@@ -1,18 +1,29 @@
 import Carousel from "nuka-carousel";
 
 const CarouselContainer = () => {
+    const images = [
+    "/slideshow/1.jpg",
+    "/slideshow/2.jpg",
+    "/slideshow/3.jpg",
+    "/slideshow/4.jpg",
+    "/slideshow/5.jpg",
+    "/slideshow/6.jpg",
+    "/slideshow/7.jpg",
+    "/slideshow/8.jpg",
+    "/slideshow/9.jpg",
+    "/slideshow/10.jpg",
+    ]
   return (
-    <Carousel autoplay autoplayInterval={3000} wrapAround withoutControls animation="zoom">
-      <img src="/slideshow/1.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/2.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/3.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/4.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/5.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/6.jpg" className="h-[45vh] w-[100%]"  />
-      <img src="/slideshow/7.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/8.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/9.jpg" className="h-[45vh] w-[100%]" />
-      <img src="/slideshow/10.jpg" className="h-[45vh] w-[100%]" />
+    <Carousel autoplay autoplayInterval={4000} wrapAround withoutControls animation="zoom">
+        {images.map((image, index) => (
+            <div key={index} className="w-full h-[500px]">
+            <img
+                src={image}
+                alt="slideshow"
+                className="w-full h-full object-cover"
+            />
+            </div>
+        ))}
     </Carousel>
   );
 };
