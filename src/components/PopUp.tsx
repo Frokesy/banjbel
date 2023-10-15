@@ -35,7 +35,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal }) => {
               </button>
             </div>
             <div className="">
-              <img src="/slideshow/10.jpg" alt="" />
+              <img src="/slideshow/10.jpg" alt="baff" />
             </div>
 
             <div className="flex justify-center">
