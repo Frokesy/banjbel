@@ -25,7 +25,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal }) => {
           variants={modalVariants}
           transition={{ duration: 0.3 }}
         >
-          <div className="p-4 rounded-lg h-[70vh] shadow-lg">
+          <div className="p-4 rounded-lg h-[90vh] shadow-lg">
             <div className="flex justify-end py-3">
               <button
                 onClick={closeModal}
@@ -34,7 +34,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal }) => {
                 <FaTimes size={24} />
               </button>
             </div>
-            <div className="h-[90%]">
+            <div className="">
               <img src="/slideshow/10.jpg" alt="baff" className="h-[100%]" />
             </div>
 
