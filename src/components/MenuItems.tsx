@@ -47,7 +47,7 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="absolute top-0 right-0 lg:right-[35vw] h-full"
+      className="absolute top-0 right-0 lg:right-[35vw] z-50 h-full"
     >
       <motion.div
         variants={{

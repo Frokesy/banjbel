@@ -26,8 +26,8 @@ const Home = () => {
 
   return (
     <PageTransition>
-      <CarouselContainer />
       <div className="">
+        <CarouselContainer />
         <About fromHome />
         <Registration />
         <div className="w-[90%] mx-auto" ref={ref}>
