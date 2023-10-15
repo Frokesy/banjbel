@@ -11,7 +11,7 @@ const Footer = () => {
           junction Bashorun-Akobo road Ibadan.
         </span>
 
-        <div className="flex flex-col space-y-3">
+        <div id="contact" className="flex flex-col space-y-3">
           <h2 className="text-[#404040] text-[20px] mt-6 font-bold">
             Contacts
           </h2>
