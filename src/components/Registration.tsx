@@ -37,6 +37,11 @@ const Registration = () => {
           <InputField placeholder="phone" type="text" />
           <InputField placeholder="email" type="email" />
           <InputField placeholder="notes" textarea />
+          <div className="flex justify-center">
+            <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-4">
+              Register
+            </button>
+        </div>
         </motion.div>
       </div>
     </PageTransition>

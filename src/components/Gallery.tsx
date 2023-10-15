@@ -1,6 +1,13 @@
+import { useState } from "react";
 import PageTransition from "./PageTransition";
+import Popup from "./PopUp";
 
 const Gallery = () => {
+  const [image, setImage] = useState<string>("");
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   const images = [
     "/gallery/1.jpg",
     "/gallery/2.jpg",
@@ -47,12 +54,24 @@ const Gallery = () => {
               <img
                 src={image}
                 alt="gallery"
+                onClick={() => {
+                  setImage(image);
+                  openModal();
+                }}
                 className="w-full h-full object-cover"
               />
             </div>
           ))}
         </div>
       </div>
+      {image && (
+        <Popup
+          isOpen={isModalOpen}
+          closeModal={closeModal}
+          fromGallery
+          image={image}
+        />
+      )}
     </PageTransition>
   );
 };

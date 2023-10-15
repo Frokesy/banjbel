@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Title from "./Title";
 import { motion } from "framer-motion";
+import { NavLink } from "react-router-dom";
 
 interface CardProps {
   title: string;
@@ -25,9 +26,11 @@ const Card: FC<CardProps> = ({ title, items }) => {
         ))}
       </motion.div>
       <div className="flex justify-center">
-        <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-1 px-6 bg-[#F6F6F6] rounded-full mt-6">
-          Register
-        </button>
+        <NavLink to="/registration">
+          <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-1 px-6 bg-[#F6F6F6] rounded-full mt-6">
+            Register
+          </button>
+        </NavLink>
       </div>
     </div>
   );
