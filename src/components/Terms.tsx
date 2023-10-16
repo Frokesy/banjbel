@@ -1,4 +1,5 @@
 import PageTransition from "./PageTransition";
+import Footer from "./Footer";
 
 const Terms = () => {
   return (
@@ -25,6 +26,7 @@ const Terms = () => {
           drive. Thanks for your cooperation.
         </span>
       </div>
+      <Footer />
     </PageTransition>
   );
 };

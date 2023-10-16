@@ -3,8 +3,14 @@ import InputField from "./layout/InputField";
 import PageTransition from "./PageTransition";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import Footer from "./Footer";
+import { FC } from "react"
 
-const Registration = () => {
+interface Props {
+  fromHome?: boolean;
+}
+
+const Registration: FC<Props> = ({ fromHome }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -44,6 +50,7 @@ const Registration = () => {
         </div>
         </motion.div>
       </div>
+      {!fromHome && <Footer />}
     </PageTransition>
   );
 };

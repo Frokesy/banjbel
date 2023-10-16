@@ -5,6 +5,7 @@ import PageTransition from "./PageTransition";
 import Registration from "./Registration";
 import Card from "./layout/Card";
 import CarouselContainer from "./layout/Carousel";
+import Footer from "./Footer";
 
 const Home = () => {
   const { ref, inView } = useInView({
@@ -29,7 +30,7 @@ const Home = () => {
       <div className="">
         <CarouselContainer />
         <About fromHome />
-        <Registration />
+        <Registration fromHome />
         <div className="w-[90%] mx-auto" ref={ref}>
           <AnimatePresence>
             {inView && (
@@ -81,6 +82,7 @@ const Home = () => {
           </AnimatePresence>
         </div>
       </div>
+      <Footer />
     </PageTransition>
   );
 };

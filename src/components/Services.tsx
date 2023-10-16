@@ -1,4 +1,5 @@
 import PageTransition from "./PageTransition";
+import Footer from "./Footer";
 
 const Services = () => {
   const items = [
@@ -34,6 +35,7 @@ const Services = () => {
           </button>
         </div>
       </div>
+      <Footer />
     </PageTransition>
   );
 };

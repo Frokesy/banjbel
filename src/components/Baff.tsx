@@ -1,4 +1,5 @@
 import InputField from "./layout/InputField";
+import Footer from "./Footer";
 
 const Baff = () => {
   return (
@@ -39,6 +40,7 @@ const Baff = () => {
           Buy tickets
         </button>
       </div>
+      <Footer />
     </div>
   );
 };

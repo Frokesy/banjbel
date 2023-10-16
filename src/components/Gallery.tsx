@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PageTransition from "./PageTransition";
 import Popup from "./PopUp";
+import Footer from "./Footer"
 
 const Gallery = () => {
   const [image, setImage] = useState<string>("");
@@ -72,6 +73,7 @@ const Gallery = () => {
           image={image}
         />
       )}
+      <Footer />
     </PageTransition>
   );
 };

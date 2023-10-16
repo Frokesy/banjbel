@@ -1,5 +1,6 @@
 import PageTransition from "./PageTransition";
 import Card from "./layout/Card";
+import Footer from "./Footer";
 
 const Pricing = () => {
   return (
@@ -31,6 +32,7 @@ const Pricing = () => {
           items={["2 weeks - N33,000", "4 weeks - N60,000"]}
         />
       </div>
+      <Footer />
     </PageTransition>
   );
 };

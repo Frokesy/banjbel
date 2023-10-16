@@ -3,6 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import PageTransition from "./PageTransition";
 import { NavLink } from "react-router-dom";
+import Footer from "./Footer";
 
 interface Props {
   fromHome?: boolean;
@@ -74,15 +75,16 @@ const About: FC<Props> = ({ fromHome }) => {
         )}
 
         {fromHome && (
-          <div className="flex justify-center">
-            <NavLink to="/about">
-              <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
-                Learn More
-              </button>
-            </NavLink>
-          </div>
+            <div className="flex justify-center">
+              <NavLink to="/about">
+                <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
+                  Learn More
+                </button>
+              </NavLink>
+            </div>
         )}
       </motion.div>
+      {!fromHome && <Footer />}
     </PageTransition>
   );
 };
