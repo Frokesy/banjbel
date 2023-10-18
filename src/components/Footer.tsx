@@ -1,4 +1,4 @@
-import { FaEnvelope, FaPhone, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope, FaPhone, FaFacebook, FaWhatsapp } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -18,24 +18,26 @@ const Footer = () => {
           <div className="flex items-center space-x-2">
             <FaWhatsapp size={20} color="green" />
             <p className="text-[#404040] font-semibold text-[14px]">
-              091123456789
+              08155100856
             </p>
           </div>
           <div className="flex items-center space-x-2">
             <FaPhone size={16} color="#456db4" />
             <p className="text-[#404040] font-semibold text-[14px]">
-              091123456789
+              08155100856
             </p>
           </div>
           <div className="flex items-center space-x-2">
             <FaEnvelope size={20} color="#404040" />
             <p className="text-[#404040] font-semibold text-[14px]">
-              johndoe@gmail.com
+              banjbeldrivingschool@gmail.com
             </p>
           </div>
           <div className="flex items-center space-x-2">
-            <FaTwitter size={20} color="#456db4" />
-            <p className="text-[#404040] font-semibold text-[14px]">@banjbel</p>
+            <FaFacebook size={20} color="#456db4" />
+            <p className="text-[#404040] font-semibold text-[14px]">
+              Banjbel Driving School
+            </p>
           </div>
         </div>
 

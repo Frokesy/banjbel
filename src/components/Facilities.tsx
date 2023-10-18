@@ -1,6 +1,7 @@
 import { FaStar } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import PageTransition from "./PageTransition";
+import Footer from "./Footer";
 
 const Facilities = () => {
   const items = [
@@ -38,6 +39,7 @@ const Facilities = () => {
           </NavLink>
         </div>
       </div>
+      <Footer />
     </PageTransition>
   );
 };
