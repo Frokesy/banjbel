@@ -3,20 +3,6 @@ import Footer from "./Footer";
 import { FaStar } from "react-icons/fa";
 
 const Services = () => {
-  // const services = [
-  //   "1. Map Reading",
-  //   "2. Basic Driving Course",
-  //   "3. Proficieny Driver Course",
-  //   "4. Executive Driver Course",
-  //   "5. Road Traffic Regulation",
-  //   "6. Car Hire Service",
-  //   "7. Power-bike Training",
-  //   "8.Group/Company Driving Training",
-  //   "9. Process of Driver License",
-  //   "10. Process of number plate",
-  //   "11. City tours",
-  // ];
-
   const items = [
     "Specialized Training: Banjbel offers specilaized courses such as defensive driving, advanced driving or courses for specific types of vehicles like utility vehicles",
     "Theory Classes: Classroom sessions educate learners about traffic rules, road safety and responsible driving behaviour",
@@ -43,16 +29,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-        {/* <div className="space-y-6 pb-4 px-6">
-          {services.map((service) => (
-            <p
-              key={service}
-              className="text-[#808080] text-[18px] font-semibold"
-            >
-              {service}
-            </p>
-          ))}
-        </div> */}
 
         <div className="flex justify-center">
           <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
