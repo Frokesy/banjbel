@@ -29,9 +29,15 @@ const Home = () => {
     <PageTransition>
       <div className="">
         <CarouselContainer />
-        <About fromHome />
-        <Registration fromHome />
-        <div className="w-[90%] mx-auto" ref={ref}>
+        <div className="lg:flex lg:mt-10 lg:items-center lg:justify-between">
+          <div className="lg:w-[45%]">
+            <About fromHome />
+          </div>
+          <div className="lg:w-[50%]">
+            <Registration fromHome />
+          </div>
+        </div>
+        <div className="w-[90%] mx-auto lg:grid lg:grid-cols-3 gap-x-10" ref={ref}>
           <AnimatePresence>
             {inView && (
               <>
@@ -71,6 +77,7 @@ const Home = () => {
                   key="both-cars"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
+                  className=""
                 >
                   <Card
                     title="both cars"

@@ -8,7 +8,7 @@ interface ContainerProps {
 const Container: FC<ContainerProps> = ({ children }) => {
   return (
     <div className="w-[100%] relative justify-center items-center flex mx-auto">
-      <div className="lg:min-w-[400px] lg:w-[400px] w-[100%]">
+      <div className="w-[100%]">
         <div className="">
           <Header />
         </div>

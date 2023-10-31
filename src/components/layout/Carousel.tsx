@@ -14,9 +14,9 @@ const CarouselContainer = () => {
     "/slideshow/10.jpg",
     ]
   return (
-    <Carousel autoplay autoplayInterval={4000} wrapAround withoutControls animation="fade">
+    <Carousel autoplay autoplayInterval={4000} wrapAround withoutControls>
         {images.map((image, index) => (
-            <div key={index} className="w-full h-[350px]">
+            <div key={index} className="w-full h-[350px] lg:h-[650px]">
             <img
                 src={image}
                 alt="slideshow"

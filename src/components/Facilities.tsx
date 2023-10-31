@@ -46,8 +46,8 @@ const Facilities = () => {
   ];
   return (
     <PageTransition>
-      <div className="w-[90%] mx-auto py-10">
-        <h2 className="uppercase text-[20px] text-[#456db4] font-bold text-center pb-3">
+      <div className="w-[90%] mx-auto py-10 lg:w-[70%]">
+        <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pb-3">
           Facilities
         </h2>
         <span className="text-[16px] text-[#404040]">
@@ -60,15 +60,15 @@ const Facilities = () => {
         </span>
         <div className="space-y-6 pt-3 pb-4 text-[#404040]">
           {items.map((item) => (
-            <div key={item.id} className="flex flex-col">
-              <h2 className="text-[#456db4] text-[18px] font-bold mt-4 mb-2">
+            <div key={item.id} className="flex flex-col justify-between">
+              <h2 className="text-[#456db4] text-[18px] lg:text-[24px] font-bold mt-4 mb-2">
                 {item.header}
               </h2>
               <span>{item.content}</span>
               <div
                 className={`${
                   item.imgTwo &&
-                  "grid grid-cols-2 w-full h-[250px] max-h-[250px] gap-4"
+                  "grid grid-cols-2 w-full  gap-4"
                 } my-6`}
               >
                 <img

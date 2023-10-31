@@ -12,8 +12,8 @@ const Services = () => {
   ];
   return (
     <PageTransition>
-      <div className="w-[90%] mx-auto py-10">
-        <h2 className="uppercase text-[20px] text-[#456db4] font-bold text-center pb-10">
+      <div className="w-[90%] lg:w-[70%] mx-auto py-10">
+        <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pb-10">
           our services
         </h2>
         <span className="text-[#828282] text-center text-[18px]">

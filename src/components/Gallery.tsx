@@ -49,9 +49,9 @@ const Gallery = () => {
   return (
     <PageTransition>
       <div className="py-10 w-[95%] mx-auto">
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid lg:grid-cols-4 grid-cols-2 gap-4">
           {images.map((image, index) => (
-            <div key={index} className="w-full h-[200px]">
+            <div key={index} className="w-full cursor-pointer h-[200px]">
               <img
                 src={image}
                 alt="gallery"

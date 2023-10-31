@@ -43,7 +43,7 @@ const About: FC<Props> = ({ fromHome }) => {
         initial="hidden"
         variants={aboutVariants}
       >
-        <h2 className="uppercase text-[20px] text-[#456db4] font-bold text-center pb-10">
+        <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pb-10">
           about us
         </h2>
         {fromHome ? (
@@ -56,7 +56,7 @@ const About: FC<Props> = ({ fromHome }) => {
             made us a trusted name in the industry.
           </span>
         ) : (
-          <span className="text-[#828282] flex text-center text-[16px]">
+          <p className="text-[#828282] flex text-center lg:w-[70%] lg:mx-auto text-[16px] lg:text-[18px]">
             Welcome to Banjbel Driving School!!! Here, we are committed o
             provide unparalleled, unequalled and unrivalled training and
             educational program which will help you or your loved ones learn
@@ -71,7 +71,7 @@ const About: FC<Props> = ({ fromHome }) => {
             determined to make them one of the highest ranking drivers in the
             country. We want you to rest assured that there is none of your
             driving needs that we will not meet, even beyond your expectation.
-          </span>
+          </p>
         )}
 
         {fromHome && (

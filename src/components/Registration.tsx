@@ -32,7 +32,7 @@ const Registration: FC<Props> = ({ fromHome }) => {
     <PageTransition>
       <div ref={ref}>
         <motion.div
-          className="mb-[10vh] w-[90%] mx-auto"
+          className="mb-[10vh] w-[90%] lg:w-[70%] mx-auto"
           variants={regVariants}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
