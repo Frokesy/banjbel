@@ -47,7 +47,7 @@ const About: FC<Props> = ({ fromHome }) => {
           about us
         </h2>
         {fromHome ? (
-          <span className="text-[#828282] text-center text-[18px]">
+          <span className="text-[#828282] flex text-center text-[18px]">
             Welcome to Banjbel Driving School, where we teach you a safe smart
             driving. Founded in 31st August, 2020, we have been one of the
             fastest growing driving school in Oyo state and the most reviewed
