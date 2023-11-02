@@ -29,7 +29,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal, fromGallery, image }) => {
         >
           <div
             className={`p-4 rounded-lg ${
-              fromGallery ? "h-auto lg:h-[70vh]" : "h-[90vh]"
+              fromGallery ? "h-auto lg:h-[70vh]" : "lg:h-[100vh] h-[90vh]"
             } shadow-lg`}
           >
             <div className="flex justify-end py-3">
@@ -42,12 +42,12 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal, fromGallery, image }) => {
             </div>
             {fromGallery ? (
               <div className="">
-                <img src={image} alt="baff" />
+                <img src={image} alt="gallery" />
               </div>
             ) : (
               <div>
                 <div className="">
-                  <img src="/slideshow/10.jpg" alt="baff" />
+                  <img src="/slideshow/10.jpg" className="lg:h-[70vh]" alt="baff" />
                 </div>
 
                 <div className="flex justify-center">

@@ -68,6 +68,12 @@ const Registration: FC<Props> = ({ fromHome }) => {
             <InputField placeholder="address" type="text" name="address" />
             <InputField placeholder="phone" type="text" name="phone" />
             <InputField placeholder="email" type="email" name="email" />
+            <select name="training_option" className="text-[#456db4] outline-none uppercase rounded-lg w-full border border-[#456db4] py-1 px-2 my-2">
+              <option value="training option">Training Options</option>
+              <option value="manual cars">Manual cars</option>
+              <option value="auto cars">Auto Cars</option>
+              <option value="both cars">Both cars</option>
+            </select>
             <InputField placeholder="notes" textarea name="notes" />
             <div className="flex justify-center">
               <button
