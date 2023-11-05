@@ -11,7 +11,7 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
   const angle = 90;
   const startAngle = -45;
 
-  const itemCount = 8;
+  const itemCount = 9;
   const itemAngle = angle / (itemCount - 2);
   const itemPositions = Array.from({ length: itemCount }, (_, i) => {
     const itemAngleDeg = startAngle + i * itemAngle;
@@ -83,13 +83,15 @@ const MenuItems: FC<MenuItemsProps> = ({ setShowItems }) => {
             ) : i === 3 ? (
               <NavLink to="/gallery">gallery</NavLink>
             ) : i === 4 ? (
-              <NavLink to="/facilities">facilities</NavLink>
+              <NavLink to="/blog">blog</NavLink>
             ) : i === 5 ? (
               <NavLink to="vision">Vision & Mission</NavLink>
             ) : i === 6 ? (
               <NavLink to="/about">about Us</NavLink>
-            ) : (
+            ) : i === 7 ? (
               <NavLink to="/registration">register</NavLink>
+            ) : (
+              <NavLink to="/facilities">facilities</NavLink>
             )}
           </motion.div>
         ))}

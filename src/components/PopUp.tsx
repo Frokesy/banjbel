@@ -47,7 +47,11 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal, fromGallery, image }) => {
             ) : (
               <div>
                 <div className="">
-                  <img src="/slideshow/10.jpg" className="lg:h-[70vh]" alt="baff" />
+                  <img
+                    src="/slideshow/10.jpg"
+                    className="lg:h-[70vh]"
+                    alt="baff"
+                  />
                 </div>
 
                 <div className="flex justify-center">
@@ -56,7 +60,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal, fromGallery, image }) => {
                       onClick={closeModal}
                       className="uppercase border-4 border-[#fff] text-[#fff] text-[18px] font-bold py-1 px-6 rounded-full mt-6"
                     >
-                      Register now
+                      Acquire
                     </button>
                   </NavLink>
                 </div>

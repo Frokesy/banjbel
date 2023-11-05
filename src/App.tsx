@@ -14,6 +14,8 @@ import Terms from "./components/Terms";
 import { useEffect, useState } from "react";
 import Popup from "./components/PopUp";
 import Baff from "./components/Baff";
+import Blog from "./blog";
+import BlogSlug from "./blog/BlogSlug";
 
 function App() {
   const location = useLocation();
@@ -42,6 +44,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/baff" element={<Baff />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogSlug />} />
         </Routes>
       </AnimatePresence>
     </Container>
