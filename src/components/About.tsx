@@ -47,7 +47,7 @@ const About: FC<Props> = ({ fromHome }) => {
           about us
         </h2>
         {fromHome ? (
-          <span className="text-[#828282] flex text-center text-[18px]">
+          <span className="text-[#000] flex text-center text-[18px]">
             Welcome to Banjbel Driving School, where we teach you a safe smart
             driving. Founded in 31st August, 2020, we have been one of the
             fastest growing driving school in Oyo state and the most reviewed
@@ -56,7 +56,7 @@ const About: FC<Props> = ({ fromHome }) => {
             made us a trusted name in the industry.
           </span>
         ) : (
-          <p className="text-[#828282] flex text-center lg:w-[70%] lg:mx-auto text-[16px] lg:text-[18px]">
+          <p className="text-[#000] flex text-center lg:w-[70%] lg:mx-auto text-[16px] lg:text-[18px]">
             Welcome to Banjbel Driving School!!! Here, we are committed o
             provide unparalleled, unequalled and unrivalled training and
             educational program which will help you or your loved ones learn

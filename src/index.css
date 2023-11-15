@@ -6,7 +6,28 @@
 }
 
 #root {
-    background-image: url("/assets/bgImg.svg");
+    position: relative;
+}
+
+#root::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/assets/logo.png");
     background-repeat: no-repeat;
     background-position: bottom;
+    background-size: 40%;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+    #root::before {
+        background-image: url("/assets/bgImg.svg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
 }

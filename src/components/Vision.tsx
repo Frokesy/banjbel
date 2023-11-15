@@ -10,10 +10,10 @@ const Vision = () => {
           mission and vision
         </h2>
         <div className="lg:flex lg:flex-col lg:items-center">
-          <h2 className="text-[18px] lg:text-[24px] text-[#828282] font-bold text-center pb-4">
+          <h2 className="text-[18px] lg:text-[24px] text-[#000] font-bold text-center pb-4">
             Mission statement
           </h2>
-          <span className="text-[#828282] flex text-center text-[16px] lg:text-[18px]">
+          <span className="text-[#000] flex text-center text-[16px] lg:text-[18px]">
             Empowering learners with the knowledge, skills and confidence to
             become safe, responsible and skilled drivers for a lifetime of
             successful journeys.
@@ -21,10 +21,10 @@ const Vision = () => {
         </div>
 
         <div className="lg:flex lg:flex-col lg:items-center">
-          <h2 className="text-[18px] lg:text-[24px] text-[#828282] font-bold text-center mt-10 pb-4">
+          <h2 className="text-[18px] lg:text-[24px] text-[#000] font-bold text-center mt-10 pb-4">
             Vision statement
           </h2>
-          <span className="text-[#828282] flex text-center text-[16px] lg:text-[18px]">
+          <span className="text-[#000] flex text-center text-[16px] lg:text-[18px]">
             To be one of the leading driving schools recognized for setting the
             highest standards in driver education, safety and innovation, while
             shaping the future of responsible and skilled drivers.

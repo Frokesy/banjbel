@@ -16,14 +16,14 @@ const Services = () => {
         <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pb-10">
           our services
         </h2>
-        <span className="text-[#828282] text-center text-[18px]">
+        <span className="text-[#000] text-center text-[18px]">
           Banjbel driving school provides essential services that equip future
           drivers with the knowledge and skills needed to drive safely and
           confidently. These services include:
         </span>
         <div className="space-y-6 pt-3 pb-4">
           {items.map((item) => (
-            <div key={item} className="text-[#828282] flex space-x-2">
+            <div key={item} className="text-[#000] flex space-x-2">
               <FaStar />
               <p>{item}</p>
             </div>

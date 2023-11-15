@@ -50,7 +50,7 @@ const Facilities = () => {
         <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pb-3">
           Facilities
         </h2>
-        <span className="text-[16px] text-[#404040]">
+        <span className="text-[16px] text-[#000]">
           BANJBEL offers training in both automatic and manual cars to cater to
           the preferences and needs of their students. We offer training in both
           types of cars, ensuring that students have the opportunity to learn
@@ -58,7 +58,7 @@ const Facilities = () => {
           you're looking for a driving school that trains drivers to be
           proficient in both, BANJBEL is your best option.
         </span>
-        <div className="space-y-6 pt-3 pb-4 text-[#404040]">
+        <div className="space-y-6 pt-3 pb-4 text-[#000]">
           {items.map((item) => (
             <div key={item.id} className="flex flex-col justify-between">
               <h2 className="text-[#456db4] text-[18px] lg:text-[24px] font-bold mt-4 mb-2">
