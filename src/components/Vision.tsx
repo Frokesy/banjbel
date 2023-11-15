@@ -10,7 +10,7 @@ const Vision = () => {
           mission and vision
         </h2>
         <div className="lg:flex lg:flex-col lg:items-center">
-          <h2 className="text-[18px] lg:text-[24px] text-[#000] font-bold text-center pb-4">
+          <h2 className="text-[18px] lg:text-[24px] text-[#000ocuments/Git] font-bold text-center pb-4">
             Mission statement
           </h2>
           <span className="text-[#000] flex text-center text-[16px] lg:text-[18px]">

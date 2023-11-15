@@ -1,32 +1,31 @@
-import PageTransition from "./PageTransition";
 import Footer from "./Footer";
-import { FaStar } from "react-icons/fa";
+import PageTransition from "./PageTransition";
 
 const Services = () => {
   const items = [
-    "Specialized Training: Banjbel offers specilaized courses such as defensive driving, advanced driving or courses for specific types of vehicles like utility vehicles",
-    "Theory Classes: Classroom sessions educate learners about traffic rules, road safety and responsible driving behaviour",
-    "Comprehensive Instruction: Banjbel provides organized lessons covering traffic rules, road signs and protective driving methods.",
-    "Road Test Practice: Students get the opportunity to practice driving routes similar to those used in official road tests.",
-    "Practical Training: Banjbel provides hands-on experience.",
+    "1. Map Reading",
+    "2. Basic Driving Course",
+    "3. Proficieny Driver Course",
+    "4. Executive Driver Course",
+    "5. Road Traffic Regulation",
+    "6. Car Hire Service",
+    "7. Power-bike Training",
+    "8.Group/Company Driving Training",
+    "9. Process of Driver License",
+    "10. Process of number plate",
+    "11. City tours",
   ];
   return (
     <PageTransition>
-      <div className="w-[90%] lg:w-[70%] mx-auto py-10">
+      <div className="w-[90%] mx-auto py-10">
         <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pb-10">
           our services
         </h2>
-        <span className="text-[#000] text-center text-[18px]">
-          Banjbel driving school provides essential services that equip future
-          drivers with the knowledge and skills needed to drive safely and
-          confidently. These services include:
-        </span>
-        <div className="space-y-6 pt-3 pb-4">
+        <div className="space-y-6 pb-4 px-6 lg:text-center">
           {items.map((item) => (
-            <div key={item} className="text-[#000] flex space-x-2">
-              <FaStar />
-              <p>{item}</p>
-            </div>
+            <p key={item} className="text-[#333] lg:text-[26px] text-[18px]">
+              {item}
+            </p>
           ))}
         </div>
 
@@ -35,8 +34,8 @@ const Services = () => {
             enquire
           </button>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </PageTransition>
   );
 };
