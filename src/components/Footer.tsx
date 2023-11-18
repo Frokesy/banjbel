@@ -1,4 +1,12 @@
-import { FaEnvelope, FaPhone, FaFacebook, FaWhatsapp } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaFacebook,
+  FaWhatsapp,
+  FaInstagram,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 const Footer = () => {
@@ -11,7 +19,7 @@ const Footer = () => {
           junction Bashorun-Akobo road Ibadan.
         </span>
 
-        <div id="contact" className="flex flex-col space-y-3">
+        <div id="contact" className="flex flex-col space-y-4">
           <h2 className="text-[#404040] text-[20px] mt-6 font-bold">
             Contacts
           </h2>
@@ -34,11 +42,31 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex items-center space-x-2">
-            <FaFacebook size={20} color="#456db4" />
+            <FaInstagram size={20} color="red" />
             <p className="text-[#404040] font-semibold text-[14px]">
-              Banjbel Driving School
+              @banijbeldrivingschool
             </p>
           </div>
+          <div className="flex items-center space-x-2">
+            <FaYoutube size={20} color="red" />
+            <p className="text-[#404040] font-semibold text-[14px]">
+              @banijbeldrivingschool1098
+            </p>
+          </div>
+          <div className="flex items-center space-x-2">
+            <FaFacebook size={20} color="#456db4" />
+            <p className="text-[#404040] font-semibold text-[14px]">
+              @banijbel driving school
+            </p>
+          </div>
+          <a href="https://www.linkedin.com/in/banjbel-driving-school-622151183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <div className="flex items-center space-x-2">
+              <FaLinkedin size={20} color="#456db4" />
+              <p className="text-[#404040] font-semibold text-[14px]">
+                Banijbel Driving School
+              </p>
+            </div>
+          </a>
         </div>
 
         <div className="flex flex-col space-y-3">
