@@ -1,6 +1,5 @@
 import {
   FaEnvelope,
-  FaPhone,
   FaFacebook,
   FaWhatsapp,
   FaInstagram,
@@ -19,56 +18,6 @@ const Footer = () => {
           junction Bashorun-Akobo road Ibadan.
         </span>
 
-        <div id="contact" className="flex flex-col space-y-4">
-          <h2 className="text-[#404040] text-[20px] mt-6 font-bold">
-            Contacts
-          </h2>
-          <div className="flex items-center space-x-2">
-            <FaWhatsapp size={20} color="green" />
-            <p className="text-[#404040] font-semibold text-[14px]">
-              08155100856
-            </p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaPhone size={16} color="#456db4" />
-            <p className="text-[#404040] font-semibold text-[14px]">
-              08155100856
-            </p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaEnvelope size={20} color="#404040" />
-            <p className="text-[#404040] font-semibold text-[14px]">
-              banjbeldrivingschool@gmail.com
-            </p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaInstagram size={20} color="red" />
-            <p className="text-[#404040] font-semibold text-[14px]">
-              @banijbeldrivingschool
-            </p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaYoutube size={20} color="red" />
-            <p className="text-[#404040] font-semibold text-[14px]">
-              @banijbeldrivingschool1098
-            </p>
-          </div>
-          <div className="flex items-center space-x-2">
-            <FaFacebook size={20} color="#456db4" />
-            <p className="text-[#404040] font-semibold text-[14px]">
-              @banijbel driving school
-            </p>
-          </div>
-          <a href="https://www.linkedin.com/in/banjbel-driving-school-622151183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
-            <div className="flex items-center space-x-2">
-              <FaLinkedin size={20} color="#456db4" />
-              <p className="text-[#404040] font-semibold text-[14px]">
-                Banijbel Driving School
-              </p>
-            </div>
-          </a>
-        </div>
-
         <div className="flex flex-col space-y-3">
           <h2 className="text-[#404040] text-[20px] mt-6 font-bold">Company</h2>
           <NavLink to="/about">
@@ -77,13 +26,40 @@ const Footer = () => {
           <p className="text-[#404040] font-semibold text-[16px]">Reviews</p>
         </div>
 
-        <div className="flex flex-col space-y-2 mt-6 mb-10">
+        <div className="flex flex-col space-y-2 mt-6">
           <h2 className="text-[#404040] text-[20px] font-bold">Support</h2>
           <NavLink to="/terms">
             <p className="text-[#404040] font-semibold text-[16px]">
               Terms and Conditions
             </p>
           </NavLink>
+        </div>
+
+        <h2 className="text-[#404040] text-[20px] mt-6 mb-3 font-bold">
+          Contacts
+        </h2>
+        <div id="contact" className="flex items-center space-x-4 mb-10">
+          <a href="https://wa.me/+2348155100856">
+            <FaWhatsapp size={30} color="green" />
+          </a>
+          <a href="mailto:banjbeldrivingschool@gmail.com">
+            <FaEnvelope size={30} color="#404040" />
+          </a>
+          <a href="https://www.instagram.com/banjbeldrivingschool/">
+            <FaInstagram size={30} color="red" />
+          </a>
+          <a href="https://www.youtube.com/@banjbeldrivingschool1098">
+            <FaYoutube size={30} color="red" />
+          </a>
+          <a href="https://www.facebook.com/banjbeldedrive">
+            <FaFacebook size={30} color="#456db4" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/banjbel-driving-school-622151183?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank"
+          >
+            <FaLinkedin size={30} color="#456db4" />
+          </a>
         </div>
 
         <div className="border-b-2 border-[#404040]"></div>

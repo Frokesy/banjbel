@@ -60,7 +60,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal, fromGallery, image }) => {
                       onClick={closeModal}
                       className="uppercase border-4 border-[#fff] text-[#fff] text-[18px] font-bold py-1 px-6 rounded-full mt-6"
                     >
-                      Acquire
+                      Enquire
                     </button>
                   </NavLink>
                 </div>

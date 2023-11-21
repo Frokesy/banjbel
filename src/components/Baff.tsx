@@ -1,4 +1,3 @@
-import InputField from "./layout/InputField";
 import Footer from "./Footer";
 
 const Baff = () => {
@@ -6,41 +5,71 @@ const Baff = () => {
     <div>
       <div className="w-[90%] lg:w-[70%] mx-auto">
         <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pt-10 pb-4">
-          baff registration
+          Cultural Event Unites Community with Engaging Traffic Regulations
+          Lectures
         </h2>
         <div className="flex flex-col items-center justify-center">
-          <img src="/slideshow/10.jpg" alt="baff" className="lg:h-[500px] w-[500px]" />
-          <span className="text-[#828282] flex text-center text-[16px] lg:text-[20px ] pt-6">
-            Jingle bells, Jingle bells, Jingle all the way... 🎄✨. Christmas is
-            around the corner, are you excited? Cos we are 🤗 and can&apos;t
-            wait to celebrate it with you 🥳. BANJBEL DRIVING SCHOOL presents to
-            you her annual fun festival, BAFF &apos;23 which promises to be
-            fun-filled. You really don&apos;t want to miss this festival! There
-            will be talent hunt, fashion show, games, comedy show, raffle draw,
-            lots of prizes to be won like phones, TV, umbrellas, food items,
-            fans and guess what?🤭 a lucky winner will be going home with a car!
-            Amazing right? And to crown it all, entry is absolutely free 💯.
-          </span>
-          <div className="pt-6 flex flex-col text-center lg:text-[20px] space-y-2 text-[#828282] font-semibold">
-            <span>Venue: Islamic College Bashorun, Ibadan.</span>
-            <span> Date: 23rd December, 2023.</span>
-            <span>Time: 12pm prompt.</span>
-          </div>
-          <h2 className="uppercase text-[20px] text-[#456db4] font-bold text-center pt-10 pb-4">
-            you can buy your raffle tickets by calling or filling the online
-            form to get your tickets
-          </h2>
+          <img
+            src="/slideshow/10.jpg"
+            alt="baff"
+            className="lg:h-[500px] w-[500px]"
+          />
 
-          <div className="lg:w-[50%]">
-            <InputField placeholder="name" type="text" />
-            <InputField placeholder="address" type="text" />
-            <InputField placeholder="phone number" type="text" />
-            <InputField placeholder="email" type="email" />
-          </div>
-          <div className="flex justify-center">
-            <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-1 px-6 bg-[#F6F6F6] rounded-full mt-6">
-              Buy tickets
-            </button>
+          <div className="mt-14 space-y-4">
+            <p className="text-[16px] text-[#333] text-center">
+              In a vibrant and educational gathering like BAFF'24, this cultural
+              event will bring together local residents, professionals, and
+              enthusiasts to explore the often overlooked but crucial topic of
+              traffic regulations. The event, will hold in the heart of Ibadan
+              city and provids a platform for individuals to not only celebrate
+              their cultural heritage but also gain valuable insights into road
+              safety and traffic management.
+            </p>
+            <p className="text-[16px] text-[#333] text-center">
+              The event will take place at Islamic college Bashorun, where
+              attendees will be greeted with an array of sights and sounds that
+              reflect the rich diversity of the neighborhood. Booths will be
+              filled with ethnic foods, traditional music, and cultural
+              artifacts to create an atmosphere of festivity and unity. However,
+              the true highlight of the day is a series of engaging lectures and
+              discussions on traffic regulations. We at Banjbel Driving School
+              are the host and we will be inviting knowledgeable experts in the
+              field.
+            </p>
+            <p className="text-[16px] text-[#333] text-center">
+              The lectures will cover a wide range of topics, from the
+              importance of obeying traffic laws to the role of road safety in
+              maintaining a harmonious community. The speakers, which included
+              the FRSC and transportation experts will effectively communicate
+              the significance of responsible driving and the impact it has on
+              everyone's lives.
+            </p>
+            <p className="text-[16px] text-[#333] text-center">
+              One of the most compelling segments of the event will be a panel
+              discussion that allows attendees to ask questions and share their
+              own experiences and concerns regarding traffic regulations. This
+              interactive element will foster a sense of community engagement
+              and provide a platform for individuals to voice their opinions.
+            </p>
+            <p className="text-[16px] text-[#333] text-center">
+              The cultural event will not only educational but also fun. It will
+              successfully manage to blend a celebration of diverse backgrounds
+              with an important message about safety. Attendees will leave the
+              event with a heightened awareness of traffic regulations and their
+              role in promoting road safety and community well-being.{" "}
+            </p>
+
+            <p className="text-[16px] text-[#333] text-center">
+              This event will be the first of it's kind and will serve as a
+              shining example of how cultural gatherings can be used to convey
+              essential information and create awareness in a creative and
+              engaging way. By integrating lectures on traffic regulations into
+              a cultural celebration, the event will demonstrate the potential
+              for building stronger, more responsible communities through
+              education and shared experiences. It will emphasize the idea that
+              every individual has a part to play in creating a safer and more
+              cohesive society, starting with responsible road behavior.
+            </p>
           </div>
         </div>
       </div>
