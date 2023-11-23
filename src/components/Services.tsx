@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Footer from "./Footer";
 import PageTransition from "./PageTransition";
 
@@ -30,9 +31,11 @@ const Services = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
-            enquire
-          </button>
+          <NavLink to="/registration">
+            <button className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-10">
+              enquire
+            </button>
+          </NavLink>
         </div>
         <Footer />
       </div>

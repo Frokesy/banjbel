@@ -25,9 +25,16 @@
 }
 
 @media screen and (max-width: 768px) {
+    #root {
+        background-image: url("/assets/bgImg.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
     #root::before {
         background-image: url("/assets/bgImg.svg");
-        background-position: bottom;
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: 80%;
     }
 }
