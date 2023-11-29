@@ -29,7 +29,7 @@
         background-image: url("/assets/bgImg.svg");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 80%;
+        background-size: 100%;
     }
     #root::before {
         background-image: url("/assets/bgImg.svg");

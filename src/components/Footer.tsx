@@ -42,7 +42,7 @@ const Footer = () => {
           <a href="https://wa.me/+2348155100856">
             <FaWhatsapp size={30} color="green" />
           </a>
-          <a href="mailto:banjbeldrivingschool@gmail.com">
+          <a href="mailto:support@banjbeldrivingschool.com">
             <FaEnvelope size={30} color="#404040" />
           </a>
           <a href="https://www.instagram.com/banjbeldrivingschool/">
