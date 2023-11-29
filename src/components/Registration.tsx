@@ -36,10 +36,10 @@ const Registration: FC<Props> = ({ fromHome }) => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_oc0t45b",
-          "template_khc211r",
+          "service_txhznra",
+          "template_vu823z8",
           form.current,
-          "CSyuEAbV-8CHfYea2"
+          "c32KwNvNn4jHQZFe4"
         )
         .then(
           (result) => {

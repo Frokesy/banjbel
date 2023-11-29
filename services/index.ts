@@ -1,8 +1,9 @@
 import { GraphQLClient, gql } from "graphql-request";
 
 const graphqlAPI =
-  "https://api-eu-west-2.hygraph.com/v2/clc849yc40r7s01uhh4cc3f2p/master" as string;
+  "https://api-eu-west-2.hygraph.com/v2/clpj29r4b8xuw01um5n2uabfc/master" as string;
 
+  
 export const getAllArticles = async () => {
   const graphQLClient = new GraphQLClient(graphqlAPI);
   const query = gql`
