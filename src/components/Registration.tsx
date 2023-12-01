@@ -4,8 +4,10 @@ import PageTransition from "./PageTransition";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import Footer from "./Footer";
-import { FC, useRef } from "react";
+import { FC, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface Props {
   fromHome?: boolean;
@@ -13,6 +15,7 @@ interface Props {
 
 const Registration: FC<Props> = ({ fromHome }) => {
   const form = useRef<HTMLFormElement>(null);
+  const [loading, setLoading] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.5,
     triggerOnce: true,
@@ -32,6 +35,7 @@ const Registration: FC<Props> = ({ fromHome }) => {
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true);
 
     if (form.current) {
       emailjs
@@ -44,7 +48,19 @@ const Registration: FC<Props> = ({ fromHome }) => {
         .then(
           (result) => {
             console.log(result.text);
-            console.log("sent")
+            setLoading(false);
+            toast.success(
+              "Registration successful, the support team will get back to you shortly",
+              {
+                position: "top-center",
+                autoClose: 2000,
+                hideProgressBar: true,
+                draggable: true,
+              }
+            );
+            if (form.current) {
+              form.current.reset();
+            }
           },
           (error) => {
             console.log(error.text);
@@ -55,6 +71,7 @@ const Registration: FC<Props> = ({ fromHome }) => {
 
   return (
     <PageTransition>
+      <ToastContainer />
       <div ref={ref}>
         <motion.div
           className="mb-[10vh] w-[90%] lg:w-[70%] mx-auto"
@@ -68,7 +85,10 @@ const Registration: FC<Props> = ({ fromHome }) => {
             <InputField placeholder="address" type="text" name="address" />
             <InputField placeholder="phone" type="text" name="phone" />
             <InputField placeholder="email" type="email" name="email" />
-            <select name="training_option" className="text-[#456db4] outline-none uppercase rounded-lg w-full border border-[#456db4] py-1 px-2 my-2">
+            <select
+              name="training_option"
+              className="text-[#456db4] outline-none uppercase rounded-lg w-full border border-[#456db4] py-1 px-2 my-2"
+            >
               <option value="training option">Training Options</option>
               <option value="manual cars">Manual cars</option>
               <option value="auto cars">Auto Cars</option>
@@ -78,9 +98,13 @@ const Registration: FC<Props> = ({ fromHome }) => {
             <div className="flex justify-center">
               <button
                 type="submit"
-                className="uppercase border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-4"
+                disabled={loading ? true : false}
+                className={`
+                ${loading ? "lowercase" : "uppercase"}
+                border border-[#456db4] text-[#456db4] text-[18px] font-semibold py-0.5 px-3 bg-[#F6F6F6] rounded-full mt-4
+                `}
               >
-                Register
+                {loading ? "Please wait..." : "Register"}
               </button>
             </div>
           </form>
