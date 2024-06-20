@@ -49,7 +49,7 @@ const Popup: FC<ModalProps> = ({ isOpen, closeModal, fromGallery, image }) => {
                 <div className="">
                   <img
                     src="/slideshow/10.jpg"
-                    className="lg:h-[70vh]"
+                    className="lg:h-[70vh] h-[50vh]"
                     alt="baff"
                   />
                 </div>
