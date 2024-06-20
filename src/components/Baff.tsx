@@ -17,58 +17,76 @@ const Baff = () => {
 
           <div className="mt-14 space-y-4">
             <p className="text-[16px] text-[#333] text-center">
-              In a vibrant and educational gathering like BAFF'24, this cultural
-              event will bring together local residents, professionals, and
-              enthusiasts to explore the often overlooked but crucial topic of
-              traffic regulations. The event, will hold in the heart of Ibadan
-              city and provids a platform for individuals to not only celebrate
-              their cultural heritage but also gain valuable insights into road
-              safety and traffic management.
+              BAFF {"'"}24 event is an annual event and the first of its kind in
+              the history of Nigeria, where citizens in a state are gathered by
+              a corporate body with the support of the state government to learn
+              about road traffic regulations, safety tips and there importance
+              for free. The event aims to address critical issues related to
+              traffic management and promote road safety awareness within our
+              state. It is a gathering that will bring everybody together; both
+              road users, young and old, businesses, traders, vendors and people
+              of all walks of life between the ages of 15 {"-"} 65years from all
+              over the city.
             </p>
             <p className="text-[16px] text-[#333] text-center">
-              The event will take place at Islamic college Bashorun, where
-              attendees will be greeted with an array of sights and sounds that
-              reflect the rich diversity of the neighborhood. Booths will be
-              filled with ethnic foods, traditional music, and cultural
-              artifacts to create an atmosphere of festivity and unity. However,
-              the true highlight of the day is a series of engaging lectures and
-              discussions on traffic regulations. We at Banjbel Driving School
-              are the host and we will be inviting knowledgeable experts in the
-              field.
+              The event is an edutainment initiative aimed at ensuring a
+              wholesome driving culture for the well-being of our communities.
+              There will be a 30-minute lecture each by the FRSC Oyo State
+              Command, V.I.O, Oyo state traffic management authority (OYSTMA) on
+              common safety tips on our roads, adherence to road signs and
+              markings and their importance in ensuring our well-being. We
+              believe this event will be a strategic way to sensitize our people
+              on safety tips and there importance on our roads. A lot of drivers
+              were taught through informal way such as relatives, mechanic,
+              friends etc. leaving them to the ignorance of traffic regulations.
+              This ignorance has caused lots of road crashes involving severe
+              injuries and death.
             </p>
             <p className="text-[16px] text-[#333] text-center">
-              The lectures will cover a wide range of topics, from the
-              importance of obeying traffic laws to the role of road safety in
-              maintaining a harmonious community. The speakers, which included
-              the FRSC and transportation experts will effectively communicate
-              the significance of responsible driving and the impact it has on
-              everyone's lives.
+              Most drivers on our roads cannot identify and interpret correctly
+              the Nigeria highway codes, they have always believed it's not
+              necessary and anything goes. That&apos;s why we have a lot of
+              impatient drivers on our roads today because they don&apos;t know
+              what it means to give right of way to those that deserve it. Some
+              drivers that went to driving school did that only to get a
+              practical knowledge, most didn&apos;t attend the theory classes
+              believing it&apos;s not necessary. Market women believe the walk
+              way is not necessarily for pedestrians and could be use by them to
+              arrange their goods while pedestrians walk on the main road
+              without caution.
             </p>
             <p className="text-[16px] text-[#333] text-center">
-              One of the most compelling segments of the event will be a panel
-              discussion that allows attendees to ask questions and share their
-              own experiences and concerns regarding traffic regulations. This
-              interactive element will foster a sense of community engagement
-              and provide a platform for individuals to voice their opinions.
-            </p>
-            <p className="text-[16px] text-[#333] text-center">
-              The cultural event will not only educational but also fun. It will
-              successfully manage to blend a celebration of diverse backgrounds
-              with an important message about safety. Attendees will leave the
-              event with a heightened awareness of traffic regulations and their
-              role in promoting road safety and community well-being.{" "}
+              Some drivers park right in front of a “NO PARKING” sign etc. In
+              other to curtail these hazardous driving culture in our state
+              that&apos;s why we are organizing this event to save lives and
+              properties.{" "}
             </p>
 
+            <div className="">
+              <h2 className="uppercase lg:text-[34px] text-[20px] text-[#456db4] font-bold text-center pt-10 pb-4">
+                objectives and opportunity
+              </h2>
+            </div>
             <p className="text-[16px] text-[#333] text-center">
-              This event will be the first of it's kind and will serve as a
-              shining example of how cultural gatherings can be used to convey
-              essential information and create awareness in a creative and
-              engaging way. By integrating lectures on traffic regulations into
-              a cultural celebration, the event will demonstrate the potential
-              for building stronger, more responsible communities through
-              education and shared experiences. It will emphasize the idea that
-              every individual has a part to play in creating a safer and more
-              cohesive society, starting with responsible road behavior.
+              We are expecting over 10,000 people in attendance from all over
+              the city of Ibadan coming to learn and also win some of the raffle
+              gifts as side attraction. The raffle gifts includes but not
+              limited to a motor car, a brand new phone, a brand new fan, tubers
+              of yam, bags of garri, semovita, carton of indomie, bags of rice,
+              electronic gadgets, T-shirt and many more. Get a ticket at Banjbel
+              Driving School from July 1st 2024.
+            </p>
+            <p className="text-[16px] text-[#333] text-center">
+              The event venue is Islamic college Bashorun Ibadan Oyo state
+              Nigeria. The event is an edutainment fully packed with lots of
+              programs such as traffic lectures🚦 traffic games, question and
+              ans, comedy show, fashion parade, talent hunt, cultural dance,
+              hip-hop dance, exhibition,
+            </p>
+            <p className="text-[16px] text-[#333] text-center">
+              WE REQUIRE PARTNERSHIP FROM ABLE BODIES AND LIKE MINDS. For
+              inquiries or sponsorship kindly call or chat 07062260683 or
+              08155100856
             </p>
           </div>
         </div>

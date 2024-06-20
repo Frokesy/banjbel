@@ -21,6 +21,7 @@ function App() {
   const location = useLocation();
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
+
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
